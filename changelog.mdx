@@ -1,0 +1,143 @@
+---
+title: Changelog
+description: Stay informed about the latest updates, new features, and improvements in Ashfaq afr.
+---
+
+## Recent Updates
+
+Stay up to date with Ashfaq afr's evolution. You receive new features, performance improvements, and bug fixes regularly. Review the highlights below, organized by release.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation pages, allowing multiple users to edit simultaneously.
+- Introduced version history with diff viewer to compare changes easily.
+- Integrated search indexing for faster page discovery across your documentation space.
+
+## Improvements
+
+- Enhanced export options, now supporting PDF and Markdown bundles with custom branding.
+- Optimized page load times by `>30%` through lazy loading of components.
+- Updated UI with your brand color `#3B82F6` for primary buttons and links.
+
+## Bug Fixes
+
+- Fixed markdown rendering issues with nested lists and tables.
+- Resolved authentication token refresh errors during long editing sessions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["bugfix", "improvement"]}>
+
+## Improvements
+
+- Streamlined sidebar navigation with collapsible sections for better organization.
+- Added keyboard shortcuts: `<kbd>Ctrl</kbd>+<kbd>K</kbd>` for quick search, `<kbd>Ctrl</kbd>+<kbd>S</kbd>` for save.
+
+## Bug Fixes
+
+- Corrected image upload failures when using drag-and-drop from external sources.
+- Patched cross-site scripting vulnerability in user-generated content parsing.
+- Fixed mobile responsiveness for embedded code blocks.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched core documentation workspace with page creation, editing, and organization tools.
+- Built-in MDX support for interactive components like tabs and steps.
+- API endpoints for programmatic document management at `https://api.example.com/docs`.
+
+## Breaking Changes
+
+- Migrated from legacy v0.x config format; update your `{config.json}` files.
+
+## Initial Setup
+
+Run this to get started:
+
+````javascript
+// Example integration with Ashfaq afr API
+const apiKey = `YOUR_API_KEY`;
+fetch(`https://api.example.com/docs`, {
+  headers: { Authorization: `Bearer ${apiKey}` }
+});
+````
+
+</Update>
+
+## Upgrade Process
+
+Follow these steps to upgrade Ashfaq afr to the latest version. You complete the process in minutes.
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+  Export your documentation space:
+
+  ````bash
+  ashfaq-afr export --space my-project --format md
+  ````
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+  <CodeGroup tabs="npm,yarn">
+  ````bash
+  npm install ashfaq-afr@latest
+  ````
+  ````bash
+  yarn add ashfaq-afr@latest
+  ````
+  </CodeGroup>
+
+  </Step>
+  <Step title="Run Migrations" icon="settings">
+
+  Apply any database changes:
+
+  ````bash
+  ashfaq-afr migrate
+  ````
+
+  Verify with `ashfaq-afr status`.
+
+  </Step>
+  <Step title="Restart Service" icon="refresh-cw">
+
+  Restart your instance and test key features like real-time editing.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Subscribe to release notifications via email or webhook at `https://your-webhook-url.com/webhook` to never miss an update. Check [GitHub releases](https://github.com/ashfaqafr/releases) for full notes.
+</Callout>
+
+## Upcoming Changes
+
+Explore what's next for Ashfaq afr.
+
+<ExpandableGroup>
+  <Expandable title="v1.3.0 - AI Assistance" default-open="true">
+    AI-powered content suggestions and auto-generated summaries coming soon. Preview in beta at `https://dashboard.example.com/ai-beta`.
+  </Expandable>
+  <Expandable title="v1.3.0 - Advanced Analytics">
+    Page view tracking and engagement metrics dashboard.
+  </Expandable>
+</ExpandableGroup>
+
+<Columns cols={3}>
+  <Card title="v1.2.0" icon="zap" href="#2024-10-15">
+    Real-time collab and exports.
+  </Card>
+  <Card title="v1.1.0" icon="shield" href="#2024-09-20">
+    Security fixes and shortcuts.
+  </Card>
+  <Card title="v1.0.0" icon="rocket" href="#2024-08-10">
+    Initial release highlights.
+  </Card>
+</Columns>

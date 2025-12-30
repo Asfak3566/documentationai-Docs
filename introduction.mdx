@@ -1,0 +1,112 @@
+---
+title: Introduction to Ashfaq afr
+description: Discover Ashfaq afr, a versatile documentation platform designed for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+Ashfaq afr provides a centralized space for your project documentation. You create, organize, and collaborate on docs with ease, supporting Markdown, rich text, and embeds. Teams use it to maintain living documentation that stays up-to-date with project changes.
+
+<Callout kind="info">
+Ashfaq afr integrates seamlessly with your Git workflow, version control, and CI/CD pipelines.
+</Callout>
+
+## Key Benefits
+
+Ashfaq afr streamlines documentation for project teams by offering intuitive organization, real-time collaboration, and powerful search. You reduce onboarding time for new members and keep knowledge accessible across your organization.
+
+<Tabs>
+  <Tab title="Teams" icon="users">
+    Collaborate with version history and comments.
+  </Tab>
+  <Tab title="Developers" icon="code">
+    Embed code snippets and API references directly.
+  </Tab>
+  <Tab title="Managers" icon="bar-chart">
+    Track doc updates and usage analytics.
+  </Tab>
+</Tabs>
+
+## Core Features
+
+Explore the main capabilities that power Ashfaq afr.
+
+<Columns cols={3}>
+  <Card title="Spaces & Folders" icon="folder" href="#organization">
+    Organize docs into custom spaces and nested folders for projects, teams, or topics.
+  </Card>
+  <Card title="Rich Editing" icon="edit-3">
+    Edit with Markdown, WYSIWYG, or import from GitHub, Notion, and Google Docs.
+  </Card>
+  <Card title="Search & AI" icon="search">
+    Full-text search with AI-powered summaries and question answering.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get your first documentation space running in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://dashboard.example.com/signup` with your email.
+  </Step>
+  <Step title="New Space" icon="plus">
+    Click "New Space" and name it for your project, like "My Project Docs".
+  </Step>
+  <Step title="Add First Doc" icon="file-plus">
+    Create a Markdown file:
+    
+````markdown
+# Welcome to My Project
+
+This is your first doc.
+
+## Quick Setup
+
+```bash
+npm install my-project
+```
+````
+  </Step>
+  <Step title="Publish & Share" icon="share-2">
+    Hit publish and share the link with your team.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Embed API docs example
+const client = new AshfaqAfrClient({ apiKey: 'YOUR_API_KEY' });
+await client.docs.create({ title: 'API Guide', content: '# Endpoint\nPOST /v1/docs' });
+```
+```python
+# Python integration
+from ashfaq_afr import Client
+client = Client(api_key='YOUR_API_KEY')
+client.docs.create(title='API Guide', content='# Endpoint\nPOST /v1/docs')
+```
+</CodeGroup>
+
+## Next Steps
+
+Dive deeper into Ashfaq afr with these guides.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Set up your first full documentation workflow.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your spaces with API keys and OAuth.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize themes and integrations.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    See what's new in recent releases.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+Start with the <a href="/quickstart">Quickstart</a> to build your first space today.
+</Callout>
